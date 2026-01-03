@@ -1,0 +1,16 @@
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: my-image-updater
+  namespace: argocd
+spec:
+  namespace: argocd  # Target namespace where Argo CD Applications are located
+  commonUpdateSettings:
+    updateStrategy: semver
+  writeBackConfig:
+    method: "argocd"
+  applicationRefs:
+    - namePattern: "iot-playground"  # Select applications matching this pattern
+      images:
+        - alias: "playground"
+          imageName: "hnaciri/iot"
