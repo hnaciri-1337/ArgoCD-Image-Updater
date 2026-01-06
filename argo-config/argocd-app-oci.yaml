@@ -6,10 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/hnaciri-1337/ARGOCD.git
-    targetRevision: HEAD
+    repoURL: oci://registry-1.docker.io/hnaciri/conf
+    targetRevision: 0.0.0
     path: .
-    # Kustomize will be auto-detected because kustomization.yaml is present
   destination:
     server: https://kubernetes.default.svc
     namespace: dev

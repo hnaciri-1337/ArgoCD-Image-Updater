@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: playground
-          image: hnaciri/iot
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: Always
           ports:
             - containerPort: 1337
