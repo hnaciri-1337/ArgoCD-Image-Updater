@@ -1,4 +1,4 @@
-# InceptionOfThings: GitOps Demo with ArgoCD, Kustomize, and Image Updater
+# GitOps Demo with ArgoCD, Kustomize, and Image Updater
 
 ## 🚀 Overview
 This repository demonstrates a modern, automated GitOps workflow for Kubernetes using:
