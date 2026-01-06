@@ -1,5 +1,5 @@
 
-# InceptionOfThings: GitOps with ArgoCD, OCI Registry, and Image Updater
+# GitOps with ArgoCD, OCI Registry, and Image Updater
 
 ## 🚀 Overview
 
